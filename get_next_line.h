@@ -6,13 +6,12 @@
 /*   By: rmiyauch <rmiyauch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 11:11:07 by rmiyauch          #+#    #+#             */
-/*   Updated: 2024/05/04 23:04:26 by rmiyauch         ###   ########.fr       */
+/*   Updated: 2024/05/04 23:14:37 by rmiyauch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
