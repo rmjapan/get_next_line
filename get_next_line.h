@@ -6,7 +6,7 @@
 /*   By: rmiyauch <rmiyauch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 11:11:07 by rmiyauch          #+#    #+#             */
-/*   Updated: 2024/05/04 23:14:37 by rmiyauch         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:28:54 by rmiyauch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 # define GET_NEXT_LINE_H
 # include <stdlib.h>
 # include <unistd.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 32
+# endif
 
 char	*get_next_line(int fd);
 size_t	ft_strlen(const char *str);

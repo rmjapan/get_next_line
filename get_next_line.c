@@ -6,7 +6,7 @@
 /*   By: rmiyauch <rmiyauch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 11:11:18 by rmiyauch          #+#    #+#             */
-/*   Updated: 2024/05/04 18:32:03 by rmiyauch         ###   ########.fr       */
+/*   Updated: 2024/05/05 14:31:25 by rmiyauch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	save_buffer = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
+	save_buffer = (char *)malloc(sizeof(char) * ((size_t)BUFFER_SIZE + 1));
 	if (save_buffer == NULL)
 		return (NULL);
 	save_line = read_buffer(fd, save_buffer, save_line);
